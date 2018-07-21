@@ -13,4 +13,5 @@ public enum OrderStatusEnum implements  CodeEnum{
         this.code = code;
         this.message = message;
     }
+
 }

@@ -140,6 +140,7 @@ public class OrderServiceImpl implements OrderService {
 
         return orderDTO;
     }
+
     @Transactional
     @Override
     public OrderDTO finish(OrderDTO orderDTO) {
@@ -159,6 +160,7 @@ public class OrderServiceImpl implements OrderService {
         }
         return orderDTO;
     }
+
     @Transactional
     @Override
     public OrderDTO paid(OrderDTO orderDTO) {

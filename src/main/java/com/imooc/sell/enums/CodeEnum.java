@@ -1,5 +1,5 @@
 package com.imooc.sell.enums;
 
-public interface CodeEnum<T> {
+public interface CodeEnum {
     Integer  getCode();
 }
