@@ -25,7 +25,7 @@ public class ProductInfo {
     /**
      * 0 for normal, 1 for sold out
      */
-    private Integer productStatus;
+    private Integer productStatus = ProductStatusEnum.UP.getCode();
     private Integer categoryType;
     private Date createTime;
     private Date updateTime;
