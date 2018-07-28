@@ -1,5 +1,6 @@
 package com.imooc.sell.config;
 
+import java.util.Map;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -32,4 +33,6 @@ public class WechatAccountConfig {
     private String keyPath;
     //微信支付异步通知地址
     private String notifyUrl;
+
+    private Map<String, String> templateId;
 }
