@@ -38,3 +38,9 @@ projectUrl:
   wechatMpAuthorize: http://william.natapp1.cc
   wechatOpenAuthorize: http://william.natapp1.cc
   sell: http://william.natapp1.cc
+
+logging:
+  level:
+    com.imooc.dataobject.mapper: trace
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
