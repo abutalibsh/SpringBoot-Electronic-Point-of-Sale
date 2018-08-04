@@ -27,7 +27,9 @@ public class BuyerProductController {
     @Autowired
     private CategoryService categoryService;
     @GetMapping("/list")
-    @Cacheable(cacheNames = "product", key="123")
+//    @Cacheable(cacheNames = "product", key="123")
+    @Cacheable(cacheNames = "product", key = "#sellerId", condition = "#sellerId.length() > 3", unless = "#result.getCode() != 0")
+
     public ResultVO list() {
         //如果从数据库中查出来需要什么呢？
         //1.查询所有的上架的商品

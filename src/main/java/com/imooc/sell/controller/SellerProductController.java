@@ -101,10 +101,11 @@ public class SellerProductController {
     }
 
     @PostMapping("/save")
-    @CacheEvict(cacheNames = "product", key = "123")
 //    @Cacheable(cacheNames = "product", key = "123")
 //    @Cacheable(cacheNames = "product", key = "456")
 //    @CachePut(cacheNames = "product", key = "123")
+    @CacheEvict(cacheNames = "product", allEntries = true, beforeInvocation = true)
+
     public ModelAndView save(@Valid ProductForm form,
                              BindingResult bindingResult,
                              Map<String, Object> map) {

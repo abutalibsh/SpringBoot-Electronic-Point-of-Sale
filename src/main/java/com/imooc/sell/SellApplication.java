@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 @EnableCaching
-//@MapperScan(basePackages = "com.imooc.sell.dataobject.mapper")
+@MapperScan(basePackages = "com.imooc.sell.dataobject.mapper")
 public class SellApplication {
 
     public static void main(String[] args) {
